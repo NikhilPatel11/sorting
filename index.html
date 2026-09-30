@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="gu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Sorting Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Sorting Lab</h1>
+        <p class="sub">Potano array banavo, shuffle karo, ane step-by-step juo ke sorting kevi rite thay chhe.</p>
+
+        <div class="card">
+            <div class="chips" id="chips" role="group" aria-label="Algorithm"></div>
+        </div>
+
+        <div class="card">
+            <div class="row">
+                <input type="text" id="inp" aria-label="Array" value="5, 2, 9, 1, 7, 3, 8"
+                    placeholder="Numbers comma thi alag karo, jem ke 5, 2, 9">
+                <button id="set" class="go">Array set karo</button>
+                <button id="shuf">Shuffle</button>
+                <button id="rnd">Random</button>
+            </div>
+            <p class="meta" style="margin:6px 0 0">Max 15 numbers, darek 1 thi 99 vachche.</p>
+        </div>
+
+        <div class="card">
+            <div class="stage" id="stage" aria-live="off"></div>
+            <div class="idx" id="idx"></div>
+            <div class="legend"><span><b style="background:var(--cmp)"></b>Compare thay chhe</span><span><b
+                        style="background:var(--swp)"></b>Swap / write</span><span><b
+                        style="background:var(--piv)"></b>Pivot / minimum / key</span><span><b
+                        style="background:var(--srt)"></b>Sorted</span></div>
+        </div>
+
+        <div class="card">
+            <p class="msg" id="msg" aria-live="polite"></p>
+            <div class="row" style="margin-top:8px">
+                <button id="rst">Reset</button><button id="prev">Pachhal</button><button id="play"
+                    class="go">Play</button><button id="next">Aagal</button>
+                <label class="meta">Speed <input type="range" id="spd" min="1" max="10" value="5"></label>
+                <span class="meta" id="cnt"></span>
+            </div>
+        </div>
+
+        <div class="card"><b id="an"></b>
+            <p id="ad" style="margin:4px 0"></p>
+            <p class="meta" id="ac" style="margin:0"></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
